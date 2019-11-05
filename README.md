@@ -1,13 +1,12 @@
-# Your Project Title
+# Online Movie Ticket Booking
+## No. of group members: 5
+## Scrum master: Ishan Bhattarai
+## Developers: Kushal Kandel, Bimal Paudel
+## Test: Saksham Piya, Sadikshya Shrestha
 
-Name: Your full name here
-
-CollegeID: Your college ID
-
-Batch: Jan19A/19B/19C/19D
+## Batch: Jan19C
 
 
-# Frontend code architecture
 
-Provide a brief description of your front end code architecture including folder structure, API consumption, etc.
+
 
