@@ -1,0 +1,43 @@
+body
+{
+  background: black;
+}
+
+
+img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+#img-control
+{
+border: 1px solid white;
+margin-right: -1%;
+}
+
+.frame
+{
+  background: #F8EFEA;
+}
+
+h3
+{
+  color: cornflowerblue;
+  margin-left: 3%;
+}
+
+#movie-name
+{
+  margin-left: 40%;
+  font-size: 120%;
+}
+
+#main
+{
+  margin-left: 1%;
+}
+.nav-pills {
+  background-color: #2d2d35;
+  color: white;
+}

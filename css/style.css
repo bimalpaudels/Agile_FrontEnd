@@ -1,0 +1,67 @@
+.main
+{
+
+    margin: auto;
+    margin-top: 5%;
+    width: 40%;
+    background-color: antiquewhite;
+}
+
+.main h3{
+margin: auto;
+margin-left: 40%;
+}
+
+.tabs
+{
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.tabs :hover{
+    text-decoration: none;
+}
+
+.login-link, .reg-link
+{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: aliceblue;
+}
+
+.active
+{
+    background-color:darkgrey;
+    color: black;
+}
+
+.login-form, .reg-form
+{
+    width: 100%;
+    background-color: azure;
+    padding: 20px 30px 30px 30px;
+}
+
+.reg-form
+{
+    display: none;
+}
+
+.inp
+{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border: 2px solid #888;
+    border-bottom: 5px solid #888;
+    background-color: bisque;
+}
+

@@ -1,0 +1,172 @@
+body {
+  background: url("/images/texture.jpg") no-repeat;
+  background-size: cover;
+}
+
+section {
+  padding: 20px 0;
+}
+
+header {
+  .announcement {
+    background: #a94442;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+
+    marquee {
+      width: 70vw;
+      color: white;
+
+    }
+  }
+
+  .header {
+    background: #252525;
+    padding: 20px 30px;
+    display: flex;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 200px;
+
+        height: auto;
+      }
+    }
+
+    nav {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+
+      .nav-item {
+        margin: 0 40px 0 0;
+
+        a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+          }
+
+          span {
+            color: white
+          }
+        }
+      }
+    }
+
+    .login {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      a {
+        padding: 0 10px;
+        color: white
+      }
+    }
+  }
+}
+
+.banner-carousel {
+  padding: 0;
+
+  .carousel-item {
+    overflow: hidden;
+    max-height: 500px;
+
+  }
+}
+
+
+//components
+
+.movies {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 40px;
+
+  .movie-card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+
+    img {
+      width: 100%;
+      height: auto;
+      transition: all 500ms ease-in-out
+    }
+
+    .details {
+      position: absolute;
+      bottom: 0px;
+      padding: 15px;
+      width: 100%;
+      text-align: center;
+
+      a {
+        padding: 0 5px;
+        color: white;
+      }
+    }
+
+    &:hover {
+      & > .movie-image {
+        transform: scale(1.1);
+      }
+    }
+
+  }
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: black;
+
+  .main-footer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 0px;
+    padding: 20px;
+
+    h3 {
+      font-size: 18px;
+      color: white;
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+      margin-bottom: 20px
+    }
+
+    h5 {
+      font-size: 14px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+}
+

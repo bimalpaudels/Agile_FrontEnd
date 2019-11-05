@@ -1,0 +1,44 @@
+#sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: -60px;
+  }
+  
+  #sidebar-btn span {
+    height: 1px;
+    background: #111;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  #sidebar-btn span:nth-child(2) { width: 75%; }
+  
+  #sidebar-btn span:nth-child(3) { width: 50%; }
+
+  #sidebar {
+    background: #151718;
+    width: 200px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -200px;
+    top: 0;
+    transition: left 0.3s linear;
+  }
+
+  #sidebar.visible {
+    left: 0;
+    transition: left 0.3s linear;
+  }
+
+#movies
+{
+    width: 70%;
+    margin: auto;
+}

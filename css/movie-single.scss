@@ -1,0 +1,158 @@
+section.movie {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1.5fr auto;
+  grid-column-gap: 20px;
+  width: 85%;
+  margin: auto;
+
+  .movie-image {
+    img{
+      width: 250px;
+      height: auto;
+    }
+  }
+
+  .movie-details {
+    padding: 20px
+  }
+
+}
+
+.showings {
+  padding: 0 20px !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+
+  .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    background: #d8d5d5;
+    width: 90%;
+
+    span {
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      padding: 20px;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer !important;
+      padding: 0 20px;
+    }
+  }
+
+  .theatres {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-columns: max-content;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(100px, auto);
+    grid-row-gap: 20px;
+    width: 90%;
+
+    .show-movies {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: minmax(300px, 1fr);
+      background: #d8d5d5;
+      justify-items: center;
+      align-items: center;
+
+
+      .show-hall-name {
+        padding: 30px;
+        font-weight: normal;
+        font-size: 1.8em;
+      }
+
+      .show-times {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+
+        a {
+          border: 1px solid black;
+          font-size: 20px;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          padding: 20px;
+          text-align: center;
+          color: #000;
+
+          &.sold-out {
+            border-color: red;
+          }
+
+          &.filling-fast {
+            border-color: yellow;
+          }
+
+          &.available {
+            border-color: green;
+
+          }
+
+          &.expired {
+            border-color: #242424;
+
+          }
+        }
+      }
+    }
+  }
+
+  .time-indicators {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px 0;
+    background: #d8d5d5;
+    width: 90%;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 200px;
+
+    .time-indicator {
+      position: relative;
+
+
+      &:before {
+        position: absolute;
+        content: " ";
+        height: 20px;
+        width: 20px;
+        background: #000;
+        left: -30px;
+        bottom: 0;
+      }
+
+      &.sold-out:before {
+        background: red;
+      }
+
+      &.filling-fast:before {
+        background: yellow;
+      }
+
+      &.available:before {
+        background: green;
+      }
+
+      &.expired:before {
+        background: #242424;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,138 @@
+body {
+  background: url("/images/texture.jpg") no-repeat;
+  background-size: cover;
+}
+
+section {
+  padding: 20px 0;
+}
+
+header .announcement {
+  background: #a94442;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+header .announcement marquee {
+  width: 70vw;
+  color: white;
+}
+header .header {
+  background: #252525;
+  padding: 20px 30px;
+  display: flex;
+}
+header .header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .logo img {
+  width: 200px;
+  height: auto;
+}
+header .header nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+header .header nav .nav-item {
+  margin: 0 40px 0 0;
+}
+header .header nav .nav-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .header nav .nav-item a img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+header .header nav .nav-item a span {
+  color: white;
+}
+header .header .login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .header .login a {
+  padding: 0 10px;
+  color: white;
+}
+
+.banner-carousel {
+  padding: 0;
+}
+.banner-carousel .carousel-item {
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.movies {
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 40px;
+}
+.movies .movie-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.movies .movie-card img {
+  width: 100%;
+  height: auto;
+  transition: all 500ms ease-in-out;
+}
+.movies .movie-card .details {
+  position: absolute;
+  bottom: 0px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+.movies .movie-card .details a {
+  padding: 0 5px;
+  color: white;
+}
+.movies .movie-card:hover > .movie-image {
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: black;
+}
+footer .main-footer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 35px;
+  grid-row-gap: 0px;
+  padding: 20px;
+}
+footer .main-footer h3 {
+  font-size: 18px;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+footer .main-footer h5 {
+  font-size: 14px;
+}
+footer .main-footer h5 a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=master.css.map */

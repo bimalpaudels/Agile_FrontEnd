@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Auditorium</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row d-flex d-md-block flex-nowrap wrapper">
+                    <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                        <div class="list-group border-0 card bg-faded text-center text-md-left">
+                                <a href="./adminDashboard.html" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Admin Dashboard</span> </a>
+                                <a href="./adminControl.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="hidden-sm-down">Add Movie</span></a>
+                                <a href="./auditorium.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="hidden-sm-down">Add Auditorium</span></a>
+                                <a href="" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="hidden-sm-down">Logout</span></a>
+                        </div>
+                      </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                        <h2>Add Auditorium</h2>
+    Auditorium Name:<input type="text" class="form-control" id="auditorium_name"></br>
+    <input type="submit" id="add_auditorium" class="form-control btn btn-primary" value="Add Auditorium">
+
+    <table id="auditoriums" class="table table-dark">
+        <tr>
+            <th>Auditorium_ID</th>
+            <th>Auditorium Name</th>
+        </tr>
+    </table>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="../js/admin/auditorium.js"></script>
+</html>

@@ -1,0 +1,55 @@
+table, th, td {
+
+    margin-top: 12%;
+  border: 4px solid white;
+  table-layout: fixed;
+}
+
+td
+{
+    width: 30px;
+    background-color: aqua;
+    color: transparent;
+}
+
+td a
+{
+    color: aqua;
+}
+
+td a:hover{
+    color: aqua;
+}
+
+#buy
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    margin-left: 85%;
+}
+
+.cart
+{
+    margin-top: 6%;
+    width: 50px;
+background: rgb(151, 170, 170);
+height: 50%;
+overflow-wrap: break-word
+}
+
+.cart #carttitle{
+    color: gold;
+    font-size: 4em;
+    margin-left: 23%;
+}
+
+
+

@@ -1,0 +1,131 @@
+section.movie {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1.5fr auto;
+  grid-column-gap: 20px;
+  width: 85%;
+  margin: auto;
+}
+section.movie .movie-image img {
+  width: 250px;
+  height: auto;
+}
+section.movie .movie-details {
+  padding: 20px;
+}
+
+.showings {
+  padding: 0 20px !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+.showings .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  background: #d8d5d5;
+  width: 90%;
+}
+.showings .day span {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 20px;
+}
+.showings .day button {
+  background: none;
+  border: none;
+  cursor: pointer !important;
+  padding: 0 20px;
+}
+.showings .theatres {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: max-content;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  grid-row-gap: 20px;
+  width: 90%;
+}
+.showings .theatres .show-movies {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: minmax(300px, 1fr);
+  background: #d8d5d5;
+  justify-items: center;
+  align-items: center;
+}
+.showings .theatres .show-movies .show-hall-name {
+  padding: 30px;
+  font-weight: normal;
+  font-size: 1.8em;
+}
+.showings .theatres .show-movies .show-times {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.showings .theatres .show-movies .show-times a {
+  border: 1px solid black;
+  font-size: 20px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 20px;
+  text-align: center;
+  color: #000;
+}
+.showings .theatres .show-movies .show-times a.sold-out {
+  border-color: red;
+}
+.showings .theatres .show-movies .show-times a.filling-fast {
+  border-color: yellow;
+}
+.showings .theatres .show-movies .show-times a.available {
+  border-color: green;
+}
+.showings .theatres .show-movies .show-times a.expired {
+  border-color: #242424;
+}
+.showings .time-indicators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px 0;
+  background: #d8d5d5;
+  width: 90%;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.showings .time-indicators .time-indicator {
+  position: relative;
+}
+.showings .time-indicators .time-indicator:before {
+  position: absolute;
+  content: " ";
+  height: 20px;
+  width: 20px;
+  background: #000;
+  left: -30px;
+  bottom: 0;
+}
+.showings .time-indicators .time-indicator.sold-out:before {
+  background: red;
+}
+.showings .time-indicators .time-indicator.filling-fast:before {
+  background: yellow;
+}
+.showings .time-indicators .time-indicator.available:before {
+  background: green;
+}
+.showings .time-indicators .time-indicator.expired:before {
+  background: #242424;
+}
+
+/*# sourceMappingURL=movie-single.css.map */

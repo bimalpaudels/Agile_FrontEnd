@@ -1,0 +1,34 @@
+#screen 
+{
+    background: #D8CABF;
+}
+
+
+#screen p
+{
+    margin: auto;
+    margin-left: 37%;
+    color: brown;
+
+}
+
+#screen li span
+{
+    margin-left: 36%;
+}
+
+#movie-img span
+{
+    font-size: 40px;
+    color: chocolate;
+}
+
+#movie-img img
+{
+    margin-left: 21.9%;
+}
+
+#movie-img
+{
+    background: #F8EFEA;
+}

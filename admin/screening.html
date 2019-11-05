@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Screening</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+        <div class="container-fluid">
+                <div class="row d-flex d-md-block flex-nowrap wrapper">
+                    <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                        <div class="list-group border-0 card bg-faded text-center text-md-left">
+                                <a href="./adminDashboard.html" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><i class="fa fa-dashboard"></i> <span class="hidden-sm-down">Admin Dashboard</span> </a>
+                                <a href="./adminControl.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="hidden-sm-down">Add Movie</span></a>
+                                <a href="./auditorium.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="hidden-sm-down">Add Auditorium</span></a>
+                                <a href="" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="hidden-sm-down">Logout</span></a>
+                        </div>
+                      </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6" style="background: #F8EFEA;">
+                        <h2 style="margin-left:25%">Add Screening</h2>
+                        Movie:<input type="text" class="form-control" id="movie_id"></br>
+                        <select id="audi" class="form-control">
+                            
+                        </select>
+                        Date:<input type="date" id="date" class="form-control"></br>
+                        Time:<input type="time" id="time" class="form-control"></br>
+                        <input type="submit" id="add_screen" class="form-control btn btn-primary" value="Add Screen">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+
+    <script src="../js/admin/screening.js"></script>
+</body>
+</html>
